@@ -1,6 +1,4 @@
-import { describe, expect, test } from 'vitest'
-
-import { LineHelper } from '../src'
+import { describe } from 'vitest'
 
 describe('selector', () => {
   // test('is Group', () => {
