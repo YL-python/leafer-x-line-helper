@@ -184,7 +184,7 @@ export class LineHelper {
 
   // 拖拽处理事件
   protected onDrag(): void {
-    if (!this.app.editor.dragging) return
+    if (!this.app.editor?.dragging) return
     const nodeList = this.getNotSelectNodes()
     const currentNode = this.app.editor?.element // 当前选中的元素 构成的一个大元素
     if (!currentNode || !nodeList?.length) return
@@ -194,7 +194,7 @@ export class LineHelper {
 
   // 布局跟新后处理事件
   protected onLayoutAfter(): void {
-    if (!this.app.editor.dragging) return
+    if (!this.app.editor?.dragging) return
     const nodeList = this.getNotSelectNodes()
     const currentNode = this.app.editor?.element // 当前选中的元素 构成的一个大元素
     if (!currentNode || !nodeList?.length) return
